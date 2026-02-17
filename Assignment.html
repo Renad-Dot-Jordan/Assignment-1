@@ -8,32 +8,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <a href="#p1"></a>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css">
     </head>
 
-<header>
+<body>
+
+    <header>
     <!-- Header with image and link -->
     <div>
         <h1>Renad Alghoul</h1>
-        <a href="https://www.linkedin.com/in/renad-alghoul-9a08b0238/">LinkedIn Profile</a> <br> <br>
-        <img src="mypersonalimg.jpg" width="160" height="160" alt="Personal Image" > 
+        <img src="mypersonalimg.jpg" width="160" height="160" alt="Personal Image" id="image1"> <br> <br>
+        <label for="LinkedIn1">Check out my LinkedIn profile: </label> 
+        <a href="https://www.linkedin.com/in/renad-alghoul-9a08b0238/" id="LinkedIn1">LinkedIn Profile</a> 
     </div>
 
     <!-- The Bookmarks-->
-    <div>
+    <nav id="Boockmarks">
         <br>
-        <a href="#about me">About me</a> |
-        <a href="#video1">video of project</a> |
-        <a href="#contactme">Contact with me</a>
-    </div>
-</header>
+        <a href="#aboutme" id="BookAboutMe">About me</a> |
+        <a href="#video1" id="BookVideo">video of projects</a> |
+        <a href="#contactme1" id="BookContactMe">Contact with me</a>
+    </nav>
+    </header>
 
-<body>
+    <main>
    
-    <div id="about me">
+    <div id="aboutme">
         <!-- Paragraph -->
         <div>
-            <p>
-                <b>ABOUT ME</b> <br>
+            <p id="paragraph1">
+                <b>ABOUT ME</b> <br> <br>
                 Network Security Engineer with hands-on experience in penetration testing, web and system security, 
                 and digital forensics. Strong background in vulnerability assessment, incident response, Linux system 
                 administration, and network troubleshooting. Focused on strengthening offensive and defensive 
@@ -43,16 +48,16 @@
 
         <!-- Paragraph with span (INLINE)-->
         <div>
-            <p>
-                <b>EDUCATION</b> <br>
-                <span>Bachelor's in Network Security and System Engineering</span> <br>
+            <p id="paragraphWithSpan1">
+                <b>EDUCATION</b> <br> <br>
+                <span>Bachelor's in Network Security and System Engineering</span> <br> <br>
                 <span>Al- Balqa' Applied University</span>
             </p>
         </div>
 
         <!-- Order List -->
         <div> 
-            <ol>
+            <ol id="orderList1">
                 <b>CERTIFICATIONS: </b>
                 <li> System Administration II (RH134 - Ver. 10) – Red Hat (present)</li>
                 <li> System Administration I (RH134 - Ver. 10) – Red Hat (present) </li>
@@ -64,7 +69,7 @@
 
         <!-- Unordered List -->
         <div> 
-            <ul>
+            <ul id="unorderList1">
                 <b>SKILLS: </b>
                 <li>Penetration Testing: OWASP Top 10, Metasploit, Burp Suite, Nessus, ZAP</li>
                 <li>Networking & Traffic Analysis: Wireshark, Nmap, tcpdump, Cisco Packet Tracer</li>
@@ -76,7 +81,7 @@
 
         <!-- Table -->
         <div> 
-            <table border="2">
+            <table border="2" id="table1">
                 <tr>
                     <th>The Course : </th>
                     <th>Provided by : </th>
@@ -103,20 +108,18 @@
     
 
     <!-- Media [Video] -->
-     <div>
-     <br>
-        <label>One of my projects: </label><br>
-        <video width="400" height="300" src="Vidoehtml.mp4" id="video1" controls></video>
-     </div>
+     <div id="video1">
+        <h3>Video of my projects: </h3>
+        <video width="400" height="300" src="Vidoehtml.mp4" controls></video>
+    </div>
 
-</body>
+    </main>
 
-<footer>
-
-    <h3>contact with me: </h3> 
+<footer>    
+    <h3 id="titleContactMe">contact with me: </h3> 
 
     <!-- Some Types of Input -->
-    <div id="contactme">
+    <div id="contactme1">
         <form>
             <fieldset>
                     <legend> Full Name </legend>
@@ -191,7 +194,7 @@
             </fieldset> 
         </form> <br> 
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submit1">
 
     </div>
 
